@@ -1,0 +1,32 @@
+[data-inview] {
+    opacity: 0;
+    transition: linear 250ms opacity, linear 250ms transform
+}
+
+[data-inview].inview {
+    opacity: 1
+}
+
+[data-inview].inview.inview-default {
+    transform: translateY(0) translateZ(0)
+}
+
+[data-inview].inview.inview-fade {
+    opacity: 1
+}
+
+[data-inview].inview.inview-slide-left {
+    transform: translateX(0) translateZ(0)
+}
+
+[data-inview].inview-default {
+    transform: translateY(20px) translateZ(0)
+}
+
+[data-inview].inview-fade {
+    transform: translateY(0) translateZ(0)
+}
+
+[data-inview].inview-slide-left {
+    transform: translateX(-20px) translateZ(0)
+}
